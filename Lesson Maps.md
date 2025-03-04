@@ -1,4 +1,4 @@
-# **Lesson: Using `map()` in Python and Skipping an Index in a Loop**
+ **Lesson: Using `map()` in Python and Skipping an Index in a Loop**
 
 ## **Objective**
 By the end of this lesson, you will:
