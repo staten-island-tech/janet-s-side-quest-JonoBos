@@ -20,16 +20,13 @@ def calcRow(data):
     for row in data[1:]:  # Skipping the first row
         store_name = row[0]  # First column is the store name
         sales = list(map(int, row[1:]))  # Convert sales to numbers
-        row_totals[store_name] = round(sum(sales) / len(sales),2)  # Sum up sales for the store
+        row_totals[store_name] = round(sum(sales) / len(sales),2)  # Sum up sales for the store and divides by number of days
 
     return row_totals
 
 totals = calcRow(data)
 
-list.sort(totals)
-print (totals)
-
-
-
+y = dict(sorted(totals.items(), key=lambda item: item[1], reverse = True))
+print (y)
     
 
