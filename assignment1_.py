@@ -29,8 +29,8 @@ totals = calcRow(data)
 y = dict(sorted(totals.items(), key=lambda x: x[1], reverse = True)) 
 """ print (y)   """
 
-z = sum(y.values())
-print (z/10)
+""" z = sum(y.values())
+print (z/10) """
 
 
     
