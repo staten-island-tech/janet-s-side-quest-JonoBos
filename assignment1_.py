@@ -32,6 +32,15 @@ y = dict(sorted(totals.items(), key=lambda x: x[1], reverse = True))
 """ z = sum(y.values())
 print (z/10) """
 
+all_added = sum(y.values())
+fil_3 = (all_added/10)
+
+
+
+for location in y:
+    if int(y[location]) < 0.8 * fil_3:
+        print (location)
+
 
     
 
